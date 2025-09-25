@@ -185,7 +185,7 @@ export const Navbar = () => {
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/ridasersif"
+                  href="https://www.linkedin.com/in/rida-sersif-721497330/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-blue-100 dark:bg-blue-900/50 hover:bg-blue-200 dark:hover:bg-blue-800/50 transition-all duration-300 hover:scale-110 text-blue-600 dark:text-blue-400"
