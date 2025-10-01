@@ -10,8 +10,8 @@ const projects = [
     description: "Multi Role Hospital Management Website with advanced patient tracking and billing systems",
     image: "/projects/project7.png",
     tags: ["React", "Tailwind", "Node.js", "Stripe", "razorpay", "mongoDB", "express"],
-    demoUrl: "https://nauracare.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/neuracare.git",
+    demoUrl: "",
+    githubUrl: "",
     featured: true,
     accentColor: "from-emerald-500 to-teal-600"
   },
@@ -22,8 +22,8 @@ const projects = [
     description: "Luxury fashion e-commerce with seamless checkout experience",
     image: "/projects/project1.png",
     tags: ["React", "Tailwind", "Node.js", "Stripe"],
-    demoUrl: "https://e-commerce-website-4w6a.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/E-commerce-website.git",
+    demoUrl: "",
+    githubUrl: "",
     featured: true,
     accentColor: "from-purple-500 to-indigo-600"
   },
@@ -34,8 +34,8 @@ const projects = [
     description: "Real-time chat application with media sharing and end-to-end encryption",
     image: "/projects/project2.png",
     tags: ["Socket.IO", "MongoDB", "Express", "React"],
-    demoUrl: "https://converse-pro-frontend.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/converse-pro.git",
+    demoUrl: "",
+    githubUrl: "",
     featured: true,
     accentColor: "from-blue-500 to-cyan-600"
   },
@@ -46,8 +46,8 @@ const projects = [
     description: "AI-powered content generation platform with multi-language support",
     image: "/projects/project3.png",
     tags: ["Gemini AI", "Clerk Auth", "Redux", "Next.js"],
-    demoUrl: "https://blogni.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/Blogni.git",
+    demoUrl: "",
+    githubUrl: "",
     accentColor: "from-amber-500 to-orange-600"
   },
   {
@@ -57,8 +57,8 @@ const projects = [
     description: "Financial tracking with analytics dashboard and expense categorization",
     image: "/projects/project4.png",
     tags: ["Chart.js", "React", "Node.js", "Firebase"],
-    demoUrl: "https://spendlix.vercel.app/login",
-    githubUrl: "https://github.com/Sahilmd01/Spendlix.git",
+    demoUrl: "",
+    githubUrl: "",
     accentColor: "from-rose-500 to-pink-600"
   },
   {
