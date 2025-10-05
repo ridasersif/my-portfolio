@@ -3,64 +3,7 @@ import { useState, useRef } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 
 const projects = [
-  {
-    id: 7,
-    title: "NauraCare",
-    category: "SaaS",
-    description: "Multi Role Hospital Management Website with advanced patient tracking and billing systems",
-    image: "/projects/project7.png",
-    tags: ["React", "Tailwind", "Node.js", "Stripe", "razorpay", "mongoDB", "express"],
-    demoUrl: "",
-    githubUrl: "",
-    featured: true,
-    accentColor: "from-emerald-500 to-teal-600"
-  },
-  {
-    id: 1,
-    title: "Vante & Co.",
-    category: "E-commerce",
-    description: "Luxury fashion e-commerce with seamless checkout experience",
-    image: "/projects/project1.png",
-    tags: ["React", "Tailwind", "Node.js", "Stripe"],
-    demoUrl: "",
-    githubUrl: "",
-    featured: true,
-    accentColor: "from-purple-500 to-indigo-600"
-  },
-  {
-    id: 2,
-    title: "Converse Pro",
-    category: "Communication",
-    description: "Real-time chat application with media sharing and end-to-end encryption",
-    image: "/projects/project2.png",
-    tags: ["Socket.IO", "MongoDB", "Express", "React"],
-    demoUrl: "",
-    githubUrl: "",
-    featured: true,
-    accentColor: "from-blue-500 to-cyan-600"
-  },
-  {
-    id: 3,
-    title: "Blogni AI",
-    category: "Artificial Intelligence",
-    description: "AI-powered content generation platform with multi-language support",
-    image: "/projects/project3.png",
-    tags: ["Gemini AI", "Clerk Auth", "Redux", "Next.js"],
-    demoUrl: "",
-    githubUrl: "",
-    accentColor: "from-amber-500 to-orange-600"
-  },
-  {
-    id: 4,
-    title: "Spendlix",
-    category: "Finance",
-    description: "Financial tracking with analytics dashboard and expense categorization",
-    image: "/projects/project4.png",
-    tags: ["Chart.js", "React", "Node.js", "Firebase"],
-    demoUrl: "",
-    githubUrl: "",
-    accentColor: "from-rose-500 to-pink-600"
-  },
+ 
   {
     id: 5,
     title: "Sersif Coffee",
@@ -70,17 +13,6 @@ const projects = [
     tags: ["HTML", "CSS", "JS", "Bootstrap-5"],
     demoUrl: "https://sersif-coffe.vercel.app/",
     githubUrl: "https://github.com/ridasersif/preject-coffe.git",
-    accentColor: "from-violet-500 to-purple-600"
-  },
-   {
-    id: 6,
-    title: "JobQue",
-    category: "SaaS",
-    description: "Job portal platform with advanced filtering and matching",
-    image: "/projects/project6.png",
-    tags: ["under development","Stripe", "Redux", "React", "Mapbox"],
-    demoUrl: "#",
-    githubUrl: "#",
     accentColor: "from-violet-500 to-purple-600"
   },
   {
@@ -94,14 +26,25 @@ const projects = [
     githubUrl: "https://github.com/ridasersif/learn-jakarta",
     featured: true,
     accentColor: "from-red-500 to-orange-500"
+  },
+   {
+    id: 10,  
+    title: "Gestion des paiements",
+    category: "console",
+    description: "A console-based payment management system for agents, developed with Java, OOP principles, JDBC, and MySQL. Implements CRUD operations and a full MVC architecture.",
+    image: "/projects/gestionPaiements.png", 
+    tags: ["Java", "OOP", "JDBC", "MySQL", "MVC"],
+    githubUrl: "https://github.com/ridasersif/Syst-me-de-gestion-des-paiements-des-agents.git",
+    featured: true,
+    accentColor: "from-red-500 to-orange-500"
   }
 ];
-
 const categoryColors = {
   "E-commerce": "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200",
   "Communication": "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
   "Artificial Intelligence": "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200",
-  "Finance": "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200"
+  "Finance": "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200",
+  "console": "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200"
 };
 
 export const ProjectsSection = () => {
@@ -369,20 +312,24 @@ export const ProjectsSection = () => {
                   {/* Action buttons */}
                   <div className="flex justify-between items-center border-t border-muted/20 pt-3">
                     <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`inline-flex items-center gap-1.5 text-sm font-medium ${
-                        project.demoUrl === "#"
-                          ? "text-muted-foreground cursor-not-allowed"
-                          : "text-foreground/80 hover:text-primary group"
-                      } transition-colors duration-300`}
-                      onClick={(e) => project.demoUrl === "#" && e.preventDefault()}
-                    >
-                      <ExternalLink size={15} />
-                      {project.demoUrl === "#" ? "Coming Soon" : "Live Demo"}
-                      <MoveRight size={13} className="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
-                    </a>
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center gap-1.5 text-sm font-medium ${
+                          project.category === "console"
+                            ? "text-muted-foreground cursor-not-allowed"
+                            : "text-foreground/80 hover:text-primary group"
+                        } transition-colors duration-300`}
+                        onClick={(e) => project.category === "console" && e.preventDefault()}
+                      >
+                        <ExternalLink size={15} />
+                        {project.category === "console" ? "Console Project" : "Live Demo"}
+                        {project.category !== "console" && (
+                          <MoveRight size={13} className="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
+                        )}
+                      </a>
+
+
                     <a
                       href={project.githubUrl}
                       target="_blank"
