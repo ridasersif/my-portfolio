@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 const projects = [
  
   {
-    id: 5,
+    id: 1,
     title: "Sersif Coffee",
     category: "E-commerce",
     description: "A stylish coffee shop website built with HTML, CSS, JavaScript, and Bootstrap 5. Features responsive design and interactive UI elements.",
@@ -16,7 +16,7 @@ const projects = [
     accentColor: "from-violet-500 to-purple-600"
   },
   {
-    id: 8,  
+    id: 2,  
     title: "Sersif Learn Jakarta",
     category: "Education",
     description: "A comprehensive learning platform for Jakarta EE with interactive tutorials and examples, built using Next.js.",
@@ -28,7 +28,7 @@ const projects = [
     accentColor: "from-red-500 to-orange-500"
   },
    {
-    id: 10,  
+    id: 3,  
     title: "Gestion des paiements",
     category: "console",
     description: "A console-based payment management system for agents, developed with Java, OOP principles, JDBC, and MySQL. Implements CRUD operations and a full MVC architecture.",
@@ -37,7 +37,20 @@ const projects = [
     githubUrl: "https://github.com/ridasersif/Syst-me-de-gestion-des-paiements-des-agents.git",
     featured: true,
     accentColor: "from-red-500 to-orange-500"
-  }
+  },
+{
+  id: 4,  
+  title: "Sersif Learn Hibernate",
+  category: "Education",
+  description: "An interactive and responsive learning platform designed to teach the fundamentals of Hibernate in Java. It covers ORM concepts, entity mapping, relationships, and practical examples with clear explanations in English.",
+  image: "/projects/Hibernate.png", 
+  tags: ["Next.js", "Tailwind","shadcn/ui"],
+  demoUrl: "https://sersif-hibernate.vercel.app/",
+  githubUrl: "https://github.com/ridasersif/learn_Hibernate",
+  featured: true,
+  accentColor: "from-red-500 to-orange-500"
+}
+
 ];
 const categoryColors = {
   "E-commerce": "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200",
