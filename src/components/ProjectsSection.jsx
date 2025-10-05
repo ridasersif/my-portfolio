@@ -82,6 +82,18 @@ const projects = [
     demoUrl: "#",
     githubUrl: "#",
     accentColor: "from-violet-500 to-purple-600"
+  },
+  {
+    id: 8,  
+    title: "Sersif Learn Jakarta",
+    category: "Education",
+    description: "A comprehensive learning platform for Jakarta EE with interactive tutorials and examples, built using Next.js.",
+    image: "/projects/learnJakarta.png",
+    tags: ["Next.js", "React", "Tailwind", "JavaScript"],
+    demoUrl: "https://sersif-learn-jakarta.vercel.app/",
+    githubUrl: "https://github.com/ridasersif/learn-jakarta",
+    featured: true,
+    accentColor: "from-red-500 to-orange-500"
   }
 ];
 
