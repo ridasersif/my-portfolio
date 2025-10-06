@@ -49,7 +49,19 @@ const projects = [
   githubUrl: "https://github.com/ridasersif/learn_Hibernate",
   featured: true,
   accentColor: "from-red-500 to-orange-500"
-}
+},
+ {
+    id: 8,
+    title: "Pizza & Fast Food",
+    category: "E-commerce",
+    description: "Next.js website for a pizza and fast food restaurant with interactive menu, contact form, and Google Maps integration.",
+    image: "/projects/pizzaFastFood.png",
+    tags: ["Next.js", "React", "Tailwind", "Responsive Design", "Google Maps", "Interactive UI"],
+    demoUrl: "https://sersif-pizza.vercel.app/", 
+    githubUrl: "https://github.com/ridasersif/Slice-Bite.git",
+    featured: true,
+    accentColor: "from-red-500 to-yellow-500"
+  }
 
 ];
 const categoryColors = {
