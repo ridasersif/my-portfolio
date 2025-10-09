@@ -51,7 +51,7 @@ const projects = [
   accentColor: "from-red-500 to-orange-500"
 },
  {
-    id: 8,
+    id: 5,
     title: "Pizza & Fast Food",
     category: "E-commerce",
     description: "Next.js website for a pizza and fast food restaurant with interactive menu, contact form, and Google Maps integration.",
@@ -61,7 +61,20 @@ const projects = [
     githubUrl: "https://github.com/ridasersif/Slice-Bite.git",
     featured: true,
     accentColor: "from-red-500 to-yellow-500"
-  }
+  },
+ {
+  id: 6,  
+  title: "Cycle Tracker",
+  category: "Health & Lifestyle",
+  description: "A web application to track women's menstrual cycle, symptoms, moods, and health stats. Built with Next.js, React, and Tailwind CSS, featuring interactive calendar and personalized notifications.",
+  image: "/projects/cycleTracker.png", 
+  tags: ["Next.js", "React", "Tailwind", "Calendar", "Health Tracking"],
+  demoUrl: "https://cycle-tracker-amber.vercel.app/", 
+  githubUrl: "https://github.com/ridasersif/cycle-tracker", 
+  featured: true,
+  accentColor: "from-pink-500 to-red-500"
+}
+
 
 ];
 const categoryColors = {
